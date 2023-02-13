@@ -1,4 +1,4 @@
-footer {
+foot {
   display: grid;
   /* Here aligning 6 containers in row and dividing each in equal fraction of space. */
   grid-template-columns: repeat(4, 1fr);
@@ -11,17 +11,20 @@ footer {
   width: 100%;
   position: absolute;
 }
-.row2 {
+/* footer .row1{
+  grid-column-start: 1;
+} */
+.haha2 {
   grid-column-start: 2;
 }
-.row3 {
+.haha3 {
   grid-column-start: 3;
 }
-.row4 {
+.haha4 {
   grid-column-start: 4;
   padding: 50px;
 }
-.row5 {
+.haha5 {
   /* display: block; */
   grid-column-start: 1;
   grid-column-end: -1;
@@ -132,4 +135,11 @@ button:hover::after {
   /* padding: 10px; */
   /* giving space */
   grid-gap: 5%;
+}
+.box1{
+  /* position: fixed; */
+  width:100%;
+  border: 2px dashed black;
+  padding: 5%;
+  margin: 5%;
 }
