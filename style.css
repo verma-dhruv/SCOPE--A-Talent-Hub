@@ -10,11 +10,13 @@ foot {
   left: 0;
   width: 100%;
   position: absolute;
+  font-family: none;
 }
 /* footer .row1{
   grid-column-start: 1;
 } */
 .haha2 {
+  font-family: none;
   grid-column-start: 2;
 }
 .haha3 {
@@ -64,6 +66,7 @@ button {
   overflow: hidden;
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   width: 100px;
+  border: 2px solid gray;
 }
 
 button:hover {
@@ -136,9 +139,9 @@ button:hover::after {
   /* giving space */
   grid-gap: 5%;
 }
-.box1{
+.box1 {
   /* position: fixed; */
-  width:100%;
+  width: 100%;
   border: 2px dashed black;
   padding: 5%;
   margin: 5%;
@@ -151,9 +154,8 @@ button:hover::after {
   width: 100%;
   padding-top: 40px;
   font-family: "Poppins", sans-serif;
-  justify-content:end;
+  justify-content: end;
 }
-
 
 .wrapper .icon {
   position: relative;
@@ -214,27 +216,27 @@ button:hover::after {
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
+  background: #1877f2;
   color: #fff;
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
-  background: #1DA1F2;
+  background: #1da1f2;
   color: #fff;
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
+  background: #e4405f;
   color: #fff;
 }
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
-  background: rgba(255,0,0,255);
+  background: rgba(255, 0, 0, 255);
   color: #fff;
 }
 .wrapper .linkedln:hover,
@@ -246,11 +248,34 @@ button:hover::after {
 /* .wrapper .lastline{
   justify-content: flex-start;
 } */
-table{
+table {
   width: 100%;
 }
-.line{
-  border-bottom: solid 2px rgba(255,255,255,.15);
+.line {
+  border-bottom: solid 2px rgba(255, 255, 255, 0.15);
   height: 20px;
   margin-bottom: 22px;
+}
+.card {
+  margin: 10px;
+}
+.abovephoto {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 68%;
+  font-weight: bold;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: 50px;
+  /* padding: 10px; */
+}
+.abovephoto img {
+  width: 70px;
+}
+.kuc {
+  display: flex;
+  padding-top: 20px;
+  height: 60px;
+  font-size: small;
 }
