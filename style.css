@@ -279,3 +279,9 @@ table {
   height: 60px;
   font-size: small;
 }
+@media (max-width: 768px) {
+  .body {
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+    grid-gap: 5%;
+  }}
