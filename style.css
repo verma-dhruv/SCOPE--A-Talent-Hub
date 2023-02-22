@@ -39,6 +39,7 @@ foot {
   border-bottom-right-radius: 100px;
   height: 20%;
   width: 10%;
+  padding:1em;
 }
 .headpic{
   width:100%;
