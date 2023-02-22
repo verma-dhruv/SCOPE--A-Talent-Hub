@@ -16,6 +16,39 @@ foot {
   grid-column-start: 1;
 } */
 
+.header{
+  display: flex;
+  background-color: rgb(34, 34, 144);
+  height:20%;
+  flex-direction: row;
+  font-weight: bold;
+  color: white;
+  
+}
+.align{
+  display: flex;
+  flex-direction: column;
+}
+.row{
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+
+.logo{
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  height: 20%;
+  width: 10%;
+}
+.headpic{
+  width:100%;
+  height:400px;
+  background-color: rgb(41, 92, 174);
+  color:white;
+  font-weight: bold;
+  text-align: center;
+}
+
 .haha2 {
   font-family: none;
   grid-column-start: 2;
