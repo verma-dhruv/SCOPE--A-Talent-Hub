@@ -7,9 +7,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
   </head>
   <body>
+    <section class="sidebar">
+      <div class="nav-header">
+        <!-- <p class="logo">Tivotal</p> -->
+        <img class="logo" src="vit.png" alt="">
+        <i class="bx bx-menu btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <i class="bx bx-search search-btn"></i>
+          <input type="text" placeholder="search..." />
+          <span class="tooltip">Search</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt-2"></i>
+            <span class="title">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-phone-call"></i>
+            <span class="title">Calls</span>
+            
+          </a>
+          <span class="tooltip">Calls</span>
+          
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bookmark"></i>
+            <span class="title">Bookmarks</span>
+          </a>
+          <span class="tooltip">Bookmarks</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-wallet-alt"></i>
+            <span class="title">Wallet</span>
+          </a>
+          <span class="tooltip">Wallet</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-devices"></i>
+            <span class="title">Devices</span>
+          </a>
+          <span class="tooltip">Devices</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="title">Setting</span>
+            
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+      </ul>
+      <div class="theme-wrapper">
+        <i class="bx bxs-moon theme-icon"></i>
+        <p>Dark Theme</p>
+        <div class="theme-btn">
+          <span class="theme-ball"></span>
+        </div>
+      </div>
+    </section>
+    <section class="home">
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -22,9 +97,9 @@
     ></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <div class="body">
-      <!-- First container -->
+      <!-- First container  -->
       <div class="nested">
-        <nav id="navbar-example3" class="navbar navbar-light bg-light">
+        <!-- <nav id="navbar-example3" class="navbar navbar-light bg-light">
           <a class="navbar-brand" href="#">Navbar</a>
           <nav class="nav nav-pills flex-column">
             <a class="nav-link" href="#AUGUST 2022">August</a>
@@ -39,9 +114,9 @@
               <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>
             </nav>
           </nav>
-        </nav>
-      </div>
-      <!-- Second Container -->
+        </nav> -->
+      </div> 
+      <!-- <!-- Second Container -->
       <div class="nested">
         <!-- Inside Second container I have nested 2 box -->
 <center>
@@ -421,6 +496,52 @@ January.
       </div>
     </div>
   </center>
+</section>
+
+<script>
+  const btn_menu = document.querySelector(".btn-menu");
+  const side_bar = document.querySelector(".sidebar");
+
+  btn_menu.addEventListener("click", function () {
+    side_bar.classList.toggle("expand");
+    changebtn();
+  });
+
+  function changebtn() {
+    if (side_bar.classList.contains("expand")) {
+      btn_menu.classList.replace("bx-menu", "bx-menu-alt-right");
+    } else {
+      btn_menu.classList.replace("bx-menu-alt-right", "bx-menu");
+    }
+  }
+
+  const btn_theme = document.querySelector(".theme-btn");
+  const theme_ball = document.querySelector(".theme-ball");
+
+  const localData = localStorage.getItem("theme");
+
+  if (localData == null) {
+    localStorage.setItem("theme", "light");
+  }
+
+  if (localData == "dark") {
+    document.body.classList.add("dark-mode");
+    theme_ball.classList.add("dark");
+  } else if (localData == "light") {
+    document.body.classList.remove("dark-mode");
+    theme_ball.classList.remove("dark");
+  }
+
+  btn_theme.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+    theme_ball.classList.toggle("dark");
+    if (document.body.classList.contains("dark-mode")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  });
+</script>
     <!-- <div class="container"> -->
       <foot>
         <div class="haha">
