@@ -28,9 +28,9 @@ foot {
 .align{
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .row{
   display: grid;
@@ -40,7 +40,7 @@ foot {
 .logo{
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
-  height: 20%;
+  height: 30%;
   width: 10%;
   padding-right:1em;
 }
