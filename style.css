@@ -263,7 +263,7 @@ button:hover::after {
   /* position: fixed; */
   /* width: 100%; */
   border: 2px dashed black;
-  padding: 5%;
+  padding: 10%;
   margin: 5%;
 }
 
