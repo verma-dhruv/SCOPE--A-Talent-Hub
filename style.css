@@ -35,7 +35,15 @@ foot {
 .row{
   display: grid;
   grid-template-columns: repeat(7,1fr);
+  /* border: 5px solid black; */
 }
+/* --#{$prefix}dropdown-border-color: #{$dropdown-border-color}; */
+#lkj{
+  border: none;
+}
+
+
+
 
 .logo{
   border-top-right-radius: 100px;
@@ -51,6 +59,8 @@ foot {
   color:white;
   font-weight: bold;
   text-align: center;
+  
+  
 }
 
 .haha2 {
@@ -169,13 +179,20 @@ button:hover::before {
 button:hover::after {
   transform: translate(50%, 0) scale(1.1);
 }
-.body {
+/*  */
+.final{
   display: grid;
-  /* Here aligning 3 containers in row and dividing each in equal fraction of space. */
-  grid-template-columns: 10% 50% 20%;
-  /* padding: 10px; */
-  /* giving space */
+  grid-template-columns: 10% 60% 20%;
   grid-gap: 5%;
+}
+.second{
+  grid-column-start: 2;
+}
+.main{
+  grid-column-start: 1;
+}
+.third{
+  grid-column-start: 3;
 }
 .box1 {
   /* position: fixed; */
@@ -296,7 +313,9 @@ table {
 }
 .card {
   margin: 10px;
+  
 }
+
 .abovephoto {
   display: flex;
   justify-content: left;
@@ -307,6 +326,7 @@ table {
   gap: 10px;
   height: 50px;
   /* padding: 10px; */
+  
 }
 .abovephoto img {
   width: 70px;
@@ -359,7 +379,7 @@ table {
   }
   
   .sidebar {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
@@ -382,16 +402,17 @@ table {
     position: relative;
   }
   
-  .nav-header .logo {
+  .nav-header .logo1 {
     color: var(--color-black);
     font-size: 23px;
     font-weight: 600;
     opacity: 0;
     transition: var(--transition);
     width: 150px;
+    
   }
   
-  .sidebar.expand .nav-header .logo {
+  .sidebar.expand .nav-header .logo1 {
     opacity: 1;
     transition: var(--transition);
   }
