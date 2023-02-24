@@ -49,6 +49,11 @@ foot {
   white-space: nowrap;
 }
 
+.dropdown{
+  text-decoration: none;
+  text-overflow: none;
+}
+
 .logo {
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
