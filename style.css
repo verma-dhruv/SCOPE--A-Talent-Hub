@@ -49,13 +49,13 @@ foot {
   white-space: nowrap;
 }
 
-.dropdown{
+.dropdown {
   text-decoration: none;
   text-overflow: none;
 }
 
 .logo {
-/*   border-top-right-radius: 100px; */
+  /*   border-top-right-radius: 100px; */
   border-bottom-right-radius: 100px;
   height: 30%;
   width: 15%;
@@ -76,7 +76,7 @@ foot {
   display: inline-block;
   transition: all 0.2s ease-in;
   position: relative;
-/*   overflow: hidden; */
+  /*   overflow: hidden; */
   z-index: 1;
   color: white;
   padding: 0.7em 1.7em;
@@ -193,10 +193,6 @@ button {
   transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
   width: 100px;
   border: 2px solid gray;
-}
-
-button:hover {
-  animation: sh0 0.5s ease-in-out both;
 }
 
 @keyframes sh0 {
