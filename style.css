@@ -33,6 +33,25 @@ foot {
   font-weight: bold;
   color: white;
 }
+.header a:link {
+  color: white;
+}
+.header a:visited {
+  color: white;
+}
+.dropdown-menu a:link{
+  color: black;
+}
+.dropdown-menu a:visited{
+  color: black;
+}
+
+foot a:link {
+  color: white;
+}
+foot a:visited {
+  color: white;
+}
 .align {
   display: flex;
   flex-direction: column;
@@ -167,13 +186,13 @@ foot {
 }
 
 a:link {
-  color: lightgray;
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: darkgray;
+  color: black;
 }
 
 .box {
