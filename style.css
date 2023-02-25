@@ -48,6 +48,20 @@ foot {
 
 foot a:link {
   color: white;
+  /* padding: 10px; */
+  /* margin: 10px; */
+}
+.haha a{
+  padding: 10px;
+}
+.haha1 a{
+  padding: 10px;
+}
+.haha2 a{
+  padding: 10px;
+}
+.haha3 a{
+  padding: 10px;
 }
 foot a:visited {
   color: white;
@@ -1077,4 +1091,9 @@ body {
   outline: none;
   padding: 0 8px;
   width: 2.8em;
+}
+.topp{
+  background-color: black;
+  border: 2px solid grey;
+  padding: 10px;
 }
