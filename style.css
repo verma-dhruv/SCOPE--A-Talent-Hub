@@ -40,6 +40,10 @@ foot {
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.dropdown-menu{
+            background-color: darkgray;
+            color: black;
+ }
 #row1 {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
