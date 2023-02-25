@@ -40,9 +40,9 @@ foot {
   margin-top: 1%;
   margin-bottom: 1%;
 }
-.dropdown-menu{
-            background-color: darkgray;
-            color: black;
+.dropdown-menu, .dropdown-item{
+  background-color: transparent;
+  color: black;
  }
 #row1 {
   display: grid;
